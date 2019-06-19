@@ -1,29 +1,23 @@
-<UI version="4.0" >
- <class>LineStatisticsClass</class>
- <widget class="QMainWindow" name="LineStatisticsClass" >
-  <property name="objectName" >
-   <string notr="true">LineStatisticsClass</string>
-  </property>
-  <property name="geometry" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
-	<x>0</x>
-	<y>0</y>
-	<width>600</width>
-	<height>400</height>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>540</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>LineStatistics</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="CentralWidget"/>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="LineStatistics.qrc"/>
+  <include location="LineStatistics.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>
