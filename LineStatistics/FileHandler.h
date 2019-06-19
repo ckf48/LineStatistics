@@ -1,6 +1,10 @@
 #pragma once
 
 #include <QObject>
+#include <QVector>
+#include <QMap>
+#include <QDir>
+#include <QTextStream>
 
 class FileHandler : public QObject
 {
@@ -16,5 +20,10 @@ private:
 
 	QString result;
 
+	QMap<QString, QMap<QString, int>> allFilePathInfo;
+
 	void calculateResult();
+	QFileInfoList getFileInfoList(const QString& folderPath);
+	int countFileLine(const QString& filePath);
+	void generateResult();
 };
