@@ -1,4 +1,7 @@
 <RCC>
-    <qresource prefix="LineStatistics">
-    </qresource>
+  <qresource prefix="LineStatistics">
+    <file>Resources/button/start.png</file>
+    <file>Resources/button/add.png</file>
+    <file>Resources/button/remove.png</file>
+  </qresource>
 </RCC>

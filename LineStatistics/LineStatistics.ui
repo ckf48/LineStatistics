@@ -10,10 +10,188 @@
     <height>540</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>540</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>LineStatistics</string>
   </property>
-  <widget class="QWidget" name="CentralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListView" name="folderView">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>400</width>
+      <height>180</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListView" name="fileTypeView">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>400</width>
+      <height>180</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="addFolder">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="LineStatistics.qrc">
+      <normaloff>:/LineStatistics/Resources/button/add.png</normaloff>:/LineStatistics/Resources/button/add.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="addFileType">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>240</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="LineStatistics.qrc">
+      <normaloff>:/LineStatistics/Resources/button/add.png</normaloff>:/LineStatistics/Resources/button/add.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="removeFolder">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>80</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="LineStatistics.qrc">
+      <normaloff>:/LineStatistics/Resources/button/remove.png</normaloff>:/LineStatistics/Resources/button/remove.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="removeFileType">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>290</y>
+      <width>36</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="LineStatistics.qrc">
+      <normaloff>:/LineStatistics/Resources/button/remove.png</normaloff>:/LineStatistics/Resources/button/remove.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="resultDisplay">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>20</y>
+      <width>411</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>430</y>
+      <width>140</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>方正祥隶繁体</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+    <property name="icon">
+     <iconset resource="LineStatistics.qrc">
+      <normaloff>:/LineStatistics/Resources/button/start.png</normaloff>:/LineStatistics/Resources/button/start.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextBesideIcon</enum>
+    </property>
+   </widget>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
