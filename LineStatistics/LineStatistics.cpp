@@ -46,6 +46,6 @@ void LineStatistics::removeFileType()
 
 void LineStatistics::startStatistics()
 {
-	ui.resultDisplay->clear();
-	// TODO ²¹È«¹¦ÄÜ
+	const FileHandler fileHandler(this, folderListModel.stringList(), fileTypeListModel.stringList());
+	ui.resultDisplay->setText(fileHandler.getResult());
 }

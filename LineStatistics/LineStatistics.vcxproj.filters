@@ -36,9 +36,15 @@
     <ClCompile Include="LineStatistics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="LineStatistics.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FileHandler.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

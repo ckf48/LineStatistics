@@ -8,7 +8,9 @@
 #include <QFileDialog>
 #include <QStringListModel>
 #include <QInputDialog>
+
 #include "ui_LineStatistics.h"
+#include "FileHandler.h"
 
 
 class LineStatistics : public QMainWindow
