@@ -197,5 +197,93 @@
  <resources>
   <include location="LineStatistics.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>addFolder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removeFolder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>removeFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addFileType</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addFileType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removeFileType</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>removeFileType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>478</x>
+     <y>400</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startStatistics()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>465</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>481</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addFolder()</slot>
+  <slot>removeFolder()</slot>
+  <slot>addFileType()</slot>
+  <slot>removeFileType()</slot>
+  <slot>startStatistics()</slot>
+ </slots>
 </ui>

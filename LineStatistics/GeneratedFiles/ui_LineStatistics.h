@@ -96,6 +96,11 @@ public:
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
+        QObject::connect(addFolder, SIGNAL(clicked()), MainWindow, SLOT(addFolder()));
+        QObject::connect(removeFolder, SIGNAL(clicked()), MainWindow, SLOT(removeFolder()));
+        QObject::connect(addFileType, SIGNAL(clicked()), MainWindow, SLOT(addFileType()));
+        QObject::connect(removeFileType, SIGNAL(clicked()), MainWindow, SLOT(removeFileType()));
+        QObject::connect(startButton, SIGNAL(clicked()), MainWindow, SLOT(startStatistics()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
